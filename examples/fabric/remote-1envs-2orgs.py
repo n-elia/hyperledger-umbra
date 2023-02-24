@@ -92,11 +92,11 @@ def builds():
         "components": {
             "scenario": {
                 "uuid": "y-scenario",
-                "address": "192.168.121.101:8957",
+                "address": "192.168.56.0:8957",
             },
             "monitor": {
                 "uuid": "y-monitor",
-                "address": "192.168.121.101:8958",
+                "address": "192.168.56.0:8958",
             },
         },
     }

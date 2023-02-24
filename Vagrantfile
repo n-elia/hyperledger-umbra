@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "umbra_virtualbox" do |umbra_virtualbox|
 
     umbra_virtualbox.vm.box = "ubuntu/focal64"    
-    umbra_virtualbox.vm.network :private_network, ip: "192.168.121.101"
+    umbra_virtualbox.vm.network :private_network, ip: "192.168.56.0"
     umbra_virtualbox.vm.hostname = "umbra-vm"
     
     umbra_virtualbox.vm.provider "virtualbox" do |vb|
@@ -34,7 +34,7 @@ Vagrant.configure("2") do |config|
  
     umbra_libvirt.vm.box = "generic/ubuntu2004"
     umbra_libvirt.vm.hostname = "umbra-vm"
-    umbra_libvirt.vm.network :private_network, ip: "192.168.121.101"
+    umbra_libvirt.vm.network :private_network, ip: "192.168.56.0"
 
     umbra_libvirt.vm.provider "libvirt" do |libvirt|
       libvirt.cpus = 4
