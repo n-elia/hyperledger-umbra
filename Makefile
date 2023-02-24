@@ -97,7 +97,7 @@ docker-run: docker-build
 	--name=umbra \
 	umbra:latest umbra-cli
 
-vagrant-run-virtualbox: requirements-vagrant-virtualbox
+vagrant-run-virtualbox: vagrant-requirements-virtualbox
 	vagrant up --provider virtualbox
 
 vagrant-run-libvirt: vagrant-requirements-libvirt
